@@ -5,27 +5,27 @@ Music induces basic to complex emotions such as happiness, sadness, and nostalgi
 
 ## NOTES ON EACH MODULE
 ### lyricscraper.py
-This module uses the _lyricsgenius_ library to search for a song lyric from the Genius.com website. After searching, checking is done to identify if the lyrics are in English. After all song lyrics are searched, it is saved in a CSV file as a data frame.
-    DEPENDENCIES:
-      -  Run the following command(s):
+This module uses the _lyricsgenius_ library to search for a song lyric from the Genius.com website. After searching, checking is done to identify if the lyrics are in English. After all song lyrics are searched, it is saved in a CSV file as a data frame.  
+    DEPENDENCIES:  
+    -  Run the following command(s):
           `pip install lyricsgenius`
           `pip install langdetect`
           `pip install pandas`
 ### preprocessing.py
-This module uses NLTK to clean and preprocess the lyrics.
-    DEPENDENCIES:
-      - Run the following command(s):
-          `pip install nltk`
-      - Uncomment the commented section to download the needed NLTK corpora.
+This module uses NLTK to clean and preprocess the lyrics.  
+    DEPENDENCIES:  
+    - Run the following command(s):
+          `pip install nltk`  
+    - Uncomment the commented section to download the needed NLTK corpora.
 ### naivebayes.py
-This module trains and tests the preprocessed data using the Multinomial Naive Bayes classifier using _scikit-learn_.
-    DEPENDENCIES:
-      - Run the following command(s):
+This module trains and tests the preprocessed data using the Multinomial Naive Bayes classifier using _scikit-learn_.  
+    DEPENDENCIES:  
+    - Run the following command(s):
           `pip install scikit-learn`
 ### main.py
-This module reads the CSV file, cleans and preprocesses the data by calling the preprocessing module, trains the data by calling the naivebayes module, and tests a song using PySimpleGUI.
-    DEPENDENCIES:
-      - Run the following command(s):
+This module reads the CSV file, cleans and preprocesses the data by calling the preprocessing module, trains the data by calling the naivebayes module, and tests a song using PySimpleGUI.  
+    DEPENDENCIES:  
+    - Run the following command(s):
           `pip install seaborn`
           `pip install wordcloud`
           `pip install PySimpleGUI`
